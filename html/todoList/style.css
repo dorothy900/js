@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Gochi+Hand);
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 body{
     background-color: antiquewhite;
     min-height: 100vh;
@@ -35,7 +35,9 @@ body{
     background-color: lightcoral;
     border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
     transform: rotate(3deg);
+    display:inline-block;
 }
+
 .form_label{
     display: block;
     margin-bottom: 0.5rem;
@@ -47,6 +49,49 @@ body{
     border:3px solid transparent;
     border-bottom-right-radius: 15px 3px;
     border-bottom-left-radius: 3px 15px;
-    border-bottom: dashed 3px #9fbad5
+    border-bottom: dashed 3px #9fbad5;
+    font-size: 1rem;
+    color:rgba(105, 99, 116, 0.7);
+    width:70%;
+    margin-bottom: 20px;
+
+}
+.form_input:focus{
+    outline: none;
+    border:3px solid #9fbad5;
+}
+
+.button{
+    padding:0;
+    border: none;
+    font-family: 'Gochi Hand',cursive;
+    border-image: url();
+    border-radius: 5px;
+    box-shadow: 0 2px 0 rgb(112, 109, 109);
+    background-color: rgba(86, 138, 186, 0.7);
+    transition:all 0.3s cubic-bezier(0.175 0.885 0.32 1.275);
+    transform:rotate(4deg)
+}
+.button span{
+    background-color: #dcd3d3;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid rgb(112, 110, 110);
+}
+.button:active, .button:focus{
+    padding-bottom: 0;
+    outline: 0;
+    transform: rotate(0deg);
+}
+
+.todo-list{
+    text-align: left;
+}
+.todo-list li{
+    padding: 0.5rem;
+}
+.todo-list:hover{
+    text-decoration: line-through;
 }
 
