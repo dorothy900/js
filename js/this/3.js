@@ -29,6 +29,14 @@ function foo(){
 }
 var obj={
     a:2,
-    foo:foo()
+    foo:foo
 }
 obj.foo()
+//Example 4:隐式绑定
+var obj2 = {
+    a:3,
+    foo:obj
+}
+console.log(obj2.foo.foo())
+//Example 5 : 显式绑定 foo.this由foo改为obj
+
